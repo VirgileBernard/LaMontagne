@@ -11,6 +11,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
+  margin-bottom: 100px;
 }
 
 button {
@@ -46,13 +47,14 @@ button:hover {
 
 .bnav:hover {
   color: black;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.495);
 }
 
 header {
-  height: 80vh;
-  max-width: 550px;
+  height: 50vh;
+  max-width: 32vw;
   margin: 0 auto;
+  padding: 150px;
 }
 header .topheader {
   margin-top: 10%;
@@ -126,7 +128,6 @@ section {
 }
 section .topsection {
   padding-top: 100px;
-  padding-bottom: 50px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1215686275); /* ligne horizontale noire */
 }
 section .topsection .date {
@@ -172,12 +173,14 @@ section .topsection .img1 {
   background-image: url(../img/pic01.jpg);
   background-size: cover;
   background-position: center;
-  height: 90vh;
-  max-width: 60vw;
-  margin: 50px auto;
+  height: 80vh;
+  max-width: 50vw;
+  margin: 30px auto;
+}
+section .topsection .button {
+  margin-bottom: 50px;
 }
 section .bottomsection {
-  padding-bottom: 50px;
   display: grid;
   grid-template-columns: 50% 50%;
   min-height: 400px;
@@ -191,6 +194,7 @@ section .bottomsection p {
   width: 60vh;
   margin: 0 auto;
   margin-bottom: 30px;
+  margin-top: 50px;
 }
 section .bottomsection .left {
   border-right: 1px solid rgba(0, 0, 0, 0.1215686275); /* ligne horizontale noire */
@@ -201,6 +205,9 @@ section .bottomsection .img2 {
   width: 60vh;
   margin: 0 auto;
   margin-bottom: 30px;
+}
+section .bottomsection .button {
+  margin-bottom: 50px;
 }
 section .bottomsection .img3 {
   background-image: url(../img/pic03.jpg);
@@ -213,13 +220,69 @@ section .bottomsection .img3 {
 footer {
   background-color: white;
   max-width: 1100px;
-  margin-bottom: 15px;
+  max-height: 70vh;
   text-align: left;
-  align-items: center;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 50% 50%;
+  padding-bottom: 30px;
 }
-footer .contact {
+footer .champ {
+  display: block;
+  margin-top: 30px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+footer .champ label {
+  display: block;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+footer .champ input {
+  min-height: 30px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 3px;
+  border: 1px solid rgba(128, 128, 128, 0.543);
+}
+footer .champ #message {
+  min-height: 200px;
+  min-width: 100%;
+  text-align: left;
+  padding-left: 10px; /* ajustez la valeur pour obtenir l'espace souhaité */
+}
+footer .footerright {
+  border-left: 1px solid rgba(0, 0, 0, 0.1215686275); /* ligne horizontale noire */
+}
+footer .footerright .contact {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1215686275); /* ligne horizontale noire */
+}
+footer .footerright .lcontact {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+footer .footerright .pleft {
+  text-transform: uppercase;
   display: flex;
+  align-items: center;
+}
+footer .footerright .prb {
+  max-width: 80%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+footer .footerright .prb i {
+  border: 1px solid rgba(0, 0, 0, 0.1215686275);
+  color: rgb(0, 0, 0);
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=index.css.map */

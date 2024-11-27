@@ -60,7 +60,7 @@
     </section>
     <footer>
         <div class="footerleft">
-        <form action="post">
+        <form action="post" class="footerform">
             <div class="champ">
                 <label for="name">name</label>
                 <input type="text" id="name" name="name" required>
@@ -73,28 +73,32 @@
                 <label for="message">message</label>
                 <input type="textarea" name="message" id="message">
             </div>
+            <div class="champ">
             <button class="button">send message</button>
+            </div>
         </form>
      </div>
      <div class="footerright">
         <div class="contact">
-            <p>address</p>
-            <p>1234 Somewhere Road #87257 Nashville, TN 00000-0000</p>
+            <p class="pleft">address</p>
+            <p class="pright">1234 Somewhere Road #87257 Nashville, TN 00000-0000</p>
         </div>
         <div class="contact">
-            <p>phone</p>
-            <p>(0000) 000-0000</p>
+            <p class="pleft">phone</p>
+            <p class="pright">(0000) 000-0000</p>
         </div>
         <div class="contact">
-            <p>email</p>
-            <p>info@untilted.ltd</p>
+            <p class="pleft">email</p>
+            <p class="pright">info@untilted.ltd</p>
         </div>
-        <div class="contact">
-            <p>social</p>
+        <div class="lcontact">
+            <p class="pleft">social</p>
+            <div class="prb">
             <i class="fa-brands fa-x-twitter"></i>
             <i class="fa-brands fa-facebook-f"></i>
             <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-github"></i>
+        </div>
         </div>
      </div>
     </footer>

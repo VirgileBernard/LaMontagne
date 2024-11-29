@@ -56,6 +56,13 @@ header {
   margin: 0 auto;
   padding: 150px;
 }
+@media screen and (max-width: 480px) {
+  header {
+    min-width: 50vh;
+    padding: 0;
+    min-height: 83vh;
+  }
+}
 header .topheader {
   margin-top: 10%;
   display: flex;
@@ -67,11 +74,21 @@ header h1, header p {
   color: white;
   font-family: "inter", sans serif;
   margin-top: 50px;
+  margin-bottom: 30px;
 }
 header h1 {
   font-size: 4rem;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+@media screen and (max-width: 480px) {
+  header h1 {
+    margin-top: 150px;
+    font-size: 3rem;
+    max-width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 header p {
   font-style: italic;
@@ -88,6 +105,14 @@ header .fa-arrow-down {
   height: 30px;
   width: 30px;
 }
+@media screen and (max-width: 480px) {
+  header .fa-arrow-down {
+    font-size: 1.5rem;
+    border: 2px solid white;
+    height: 45px;
+    width: 45px;
+  }
+}
 
 nav {
   display: flex;
@@ -101,6 +126,12 @@ nav .navpages {
   width: 1100px;
   background-color: rgba(243, 243, 243, 0.1176470588);
   margin: 0 auto;
+}
+@media screen and (max-width: 480px) {
+  nav .navpages {
+    display: flex;
+    max-width: 90vw;
+  }
 }
 nav .navleft {
   display: flex;
@@ -116,6 +147,11 @@ nav .navright :hover {
   color: rgb(228, 4, 206);
   background-color: none;
 }
+@media screen and (max-width: 480px) {
+  nav .navright {
+    display: none;
+  }
+}
 
 section {
   background-color: white;
@@ -125,6 +161,11 @@ section {
   align-items: center;
   margin: 0 auto;
   margin-bottom: 40px;
+}
+@media screen and (max-width: 480px) {
+  section {
+    max-width: 90vw;
+  }
 }
 section .topsection {
   padding-top: 100px;
@@ -169,6 +210,11 @@ section .topsection .commentpic {
   margin: 0 auto;
   line-height: 2;
 }
+@media screen and (max-width: 480px) {
+  section .topsection .commentpic {
+    line-height: 3;
+  }
+}
 section .topsection .img1 {
   background-image: url(../img/pic01.jpg);
   background-size: cover;
@@ -176,6 +222,12 @@ section .topsection .img1 {
   height: 80vh;
   max-width: 50vw;
   margin: 30px auto;
+}
+@media screen and (max-width: 480px) {
+  section .topsection .img1 {
+    max-width: 80vw;
+    max-height: 30vh;
+  }
 }
 section .topsection .button {
   margin-bottom: 50px;
@@ -185,13 +237,18 @@ section .bottomsection {
   grid-template-columns: 50% 50%;
   min-height: 400px;
 }
+@media screen and (max-width: 480px) {
+  section .bottomsection {
+    display: block;
+  }
+}
 section .bottomsection h2 {
   text-transform: uppercase;
   margin: 30px 0 30px 0;
 }
 section .bottomsection p {
   line-height: 2;
-  width: 60vh;
+  width: 60vw;
   margin: 0 auto;
   margin-bottom: 30px;
   margin-top: 50px;
@@ -199,12 +256,28 @@ section .bottomsection p {
 section .bottomsection .left {
   border-right: 1px solid rgba(0, 0, 0, 0.1215686275); /* ligne horizontale noire */
 }
+@media screen and (max-width: 480px) {
+  section .bottomsection .left .date {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  section .bottomsection .left .pleft {
+    text-align: left;
+  }
+}
 section .bottomsection .img2 {
   background-image: url(../img/pic02.jpg);
   height: 40vh;
   width: 60vh;
   margin: 0 auto;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 480px) {
+  section .bottomsection .img2 {
+    max-width: 80vw;
+    max-height: 30vh;
+  }
 }
 section .bottomsection .button {
   margin-bottom: 50px;
@@ -216,6 +289,17 @@ section .bottomsection .img3 {
   margin: 0 auto;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 480px) {
+  section .bottomsection .img3 {
+    max-width: 80vw;
+    max-height: 30vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  section .bottomsection .pright {
+    text-align: left;
+  }
+}
 
 footer {
   background-color: white;
@@ -226,6 +310,11 @@ footer {
   display: grid;
   grid-template-columns: 50% 50%;
   padding-bottom: 30px;
+}
+@media screen and (max-width: 480px) {
+  footer {
+    max-width: 90vw;
+  }
 }
 footer .champ {
   display: block;

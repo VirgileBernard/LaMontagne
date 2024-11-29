@@ -54,6 +54,11 @@ header{
     max-width: 32vw;
     margin: 0 auto;
     padding: 150px;
+    @media screen and (max-width: 480px){
+        min-width: 50vh;
+        padding: 0;
+        min-height: 83vh;
+    }
 
     .topheader{
         margin-top: 10%;
@@ -66,11 +71,21 @@ header{
         color: white;
         font-family: "inter", sans serif;
         margin-top: 50px;
+        margin-bottom: 30px;
+        
     }
     h1{
         font-size: 4rem;
         text-transform: uppercase;
         letter-spacing: 1px;
+        @media screen and (max-width: 480px){
+            margin-top: 150px;
+            font-size: 3rem;
+            max-width: 90vw;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
     }
     p{
         font-style: italic;
@@ -86,6 +101,12 @@ header{
         border-radius: 50%;
         height: 30px;
         width:30px;
+        @media screen and (max-width: 480px){
+            font-size: 1.5rem;
+            border: 2px solid white;
+            height: 45px;
+            width: 45px;
+        }
     }
 
 }
@@ -94,6 +115,7 @@ nav{
     margin: 0 auto;
     list-style-type: none;
 
+
 .navpages{
     display: grid;
     grid-template-columns: 50% 30% 20%;
@@ -101,6 +123,10 @@ nav{
     width: 1100px;
     background-color: #f3f3f31e;
     margin: 0 auto;
+    @media screen and (max-width: 480px){
+        display: flex;
+        max-width: 90vw;
+    }
 }
 .navleft{
     display: flex;
@@ -114,6 +140,9 @@ nav{
    :hover{
     color: rgb(228, 4, 206);
     background-color: none;
+}
+@media screen and (max-width: 480px){
+    display: none;
 }
 }
 
@@ -131,9 +160,13 @@ section{
     align-items: center;
     margin: 0 auto;
     margin-bottom: 40px;
+    @media screen and (max-width: 480px){
+        max-width: 90vw;
+    }
     .topsection{
     padding-top: 100px;
     border-bottom: 1px solid #0000001f; /* ligne horizontale noire */
+    
     .date{
         position: relative;
     }
@@ -172,6 +205,9 @@ section{
     max-width: 60%;
     margin: 0 auto;
     line-height: 2;
+    @media screen and (max-width: 480px){
+        line-height:3 ;
+    }
    }
     .img1{
     background-image: url(../img/pic01.jpg);
@@ -180,6 +216,10 @@ section{
     height: 80vh;
     max-width: 50vw;
     margin: 30px auto;
+    @media screen and (max-width: 480px){
+        max-width: 80vw;
+        max-height: 30vh;
+    }
     }
     .button{
         margin-bottom: 50px;
@@ -192,19 +232,32 @@ section{
         display: grid;
         grid-template-columns: 50% 50%;
         min-height: 400px;
+        @media screen and (max-width: 480px){
+            display: block;
+        }
          h2{
             text-transform: uppercase;
             margin: 30px 0 30px 0;
         }
         p{
             line-height: 2;
-            width: 60vh;
+            width: 60vw;
             margin: 0 auto;
             margin-bottom: 30px;
             margin-top: 50px;
         }
         .left{
             border-right: 1px solid #0000001f; /* ligne horizontale noire */
+            .date{
+                @media screen and (max-width: 480px){
+                    text-align: center;
+                }
+            }
+            .pleft{
+                @media screen and (max-width: 480px){
+                    text-align: left;
+                }
+            }
         }
         .img2{
             background-image: url(../img/pic02.jpg);
@@ -212,6 +265,10 @@ section{
             width: 60vh;
             margin: 0 auto;
             margin-bottom: 30px;
+            @media screen and (max-width: 480px){
+                max-width: 80vw;
+                max-height: 30vh;
+            }
         }
 
         .button{
@@ -224,8 +281,16 @@ section{
         width: 60vh;
         margin: 0 auto;
         margin-bottom: 30px;
+        @media screen and (max-width: 480px){
+            max-width: 80vw;
+            max-height: 30vh;
         }
-    
+        }
+        .pright{
+            @media screen and (max-width: 480px){
+                text-align: left;
+            }
+        }
     }
 }
     
@@ -239,7 +304,9 @@ footer{
     display: grid;
     grid-template-columns: 50% 50%;
     padding-bottom: 30px;
-    
+    @media screen and (max-width: 480px){
+        max-width: 90vw;
+    }
 
     .champ{
         display: block;

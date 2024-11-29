@@ -314,6 +314,9 @@ footer {
 @media screen and (max-width: 480px) {
   footer {
     max-width: 90vw;
+    display: block;
+    max-height: 200vh;
+    padding-top: 50px;
   }
 }
 footer .champ {

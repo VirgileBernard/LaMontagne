@@ -306,6 +306,9 @@ footer{
     padding-bottom: 30px;
     @media screen and (max-width: 480px){
         max-width: 90vw;
+        display: block;
+        max-height: 200vh;
+        padding-top: 50px;
     }
 
     .champ{
@@ -367,6 +370,7 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
+        
         }
         
     }
